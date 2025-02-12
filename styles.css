@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #fafafa; /* Ensure this is correct */
+    background-color: #fafafa; /* Background color as per the requirement */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +16,8 @@ body {
 }
 
 .card-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Automatically adjusts number of columns */
+    display: grid;  /* Correct display property */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
     gap: 20px;
     width: 90%;
     max-width: 1200px;
@@ -40,12 +40,12 @@ body {
 }
 
 .card h1 {
-    font-size: 1.5em; /* 1.5em should correspond to 24px */
+    font-size: 1.5em; /* 1.5em is equal to 24px */
     color: #333;
     margin-bottom: 10px;
 }
 
 .card p {
-    font-size: 0.75em; /* 0.75em should correspond to 12px */
+    font-size: 0.75em; /* 0.75em is equal to 12px */
     color: #666;
 }
