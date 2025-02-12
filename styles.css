@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fafafa; /* Ensure this is correct */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,12 +40,12 @@ body {
 }
 
 .card h1 {
-    font-size: 1.5em;
+    font-size: 1.5em; /* 1.5em should correspond to 24px */
     color: #333;
     margin-bottom: 10px;
 }
 
 .card p {
-    font-size: 0.75em;
+    font-size: 0.75em; /* 0.75em should correspond to 12px */
     color: #666;
 }
