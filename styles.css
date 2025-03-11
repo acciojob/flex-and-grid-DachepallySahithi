@@ -1,51 +1,52 @@
-/*  your css code here. If applicable */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+.cards-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fafafa; /* Background color as per the requirement */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+        .card {
+            border: 10px solid #ccc;
+            background-color: #fafafa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
 
-.card-wrapper {
-    display: grid;  /* Correct display property */
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
-    gap: 20px;
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
+        .card h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
 
-.card {
-    background-color: #fafafa;
-    border: 10px solid #ccc;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
+        .card p {
+            font-size: 0.75em;
+            color: #555;
+            margin-bottom: 20px;
+        }
 
-.card:hover {
-    transform: translateY(-10px);
-}
+        .card .date {
+            font-size: 0.8em;
+            color: #888;
+            margin-bottom: 15px;
+        }
 
-.card h1 {
-    font-size: 1.5em; /* 1.5em is equal to 24px */
-    color: #333;
-    margin-bottom: 10px;
-}
+        .card .topic-number {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
 
-.card p {
-    font-size: 0.75em; /* 0.75em is equal to 12px */
-    color: #666;
-}
+        .card .image-placeholder {
+            width: 100%;
+            height: 150px;
+            background-color: #eee;
+            margin-bottom: 15px;
+            border-radius: 6px;
+        }
+
+        .card .footer {
+            margin-top: auto;
+            text-align: right;
+        }
